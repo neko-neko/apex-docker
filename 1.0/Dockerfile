@@ -8,7 +8,8 @@ RUN apk --update add curl && \
 
 RUN curl -sLO https://github.com/apex/apex/releases/download/v${APEX_VERSION}/apex_${APEX_VERSION}_linux_amd64.tar.gz && \
     tar -xzvf apex_${APEX_VERSION}_linux_amd64.tar.gz apex && \
+    mv apex /usr/loca/bin/ && \
     apk del curl
 
-ENTRYPOINT ["./apex"]
+ENTRYPOINT ["apex"]
 CMD ["--help"]
