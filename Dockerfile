@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-RUN apk --update add curl jq && \
+RUN apk --update add curl jq ca-certificates && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
