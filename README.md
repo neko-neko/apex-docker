@@ -3,7 +3,7 @@
 
 # Pull image
 ```bash
-$ docker pull neko-neko/apex
+$ docker pull nekoneko/apex
 ```
 
 # Run image
