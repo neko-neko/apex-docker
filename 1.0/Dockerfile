@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-ENV APEX_VERSION=1.0.0-rc2
+ENV APEX_VERSION=1.0.0-rc3
 
 RUN apk --update add curl ca-certificates && \
     rm -rf /var/lib/apt/lists/* && \
